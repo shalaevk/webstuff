@@ -1,6 +1,6 @@
 import * as React from "react"
 
-// styles new
+// style
 const pageStyles = {
   color: "#232129",
   padding: 96,
