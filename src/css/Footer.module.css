@@ -1,0 +1,32 @@
+.footer{
+background-color: #000;
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+.topfooter{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.number{
+	display: flex;
+	align-items: center;
+}
+.phone{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.social img{
+	width: 2rem;
+	height: 2rem;
+	margin: 0 0.5rem;
+
+}

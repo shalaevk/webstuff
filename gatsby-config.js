@@ -9,6 +9,11 @@ module.exports = {
       options: {
         url: "http://localhost/webstuff/graphql",
       },
+      debug: {
+        graphql: {
+          showQueryVarsOnError: true,
+        },
+      },
     },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
