@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 import * as cls from "../css/Header.module.css"
 
 
-import viber from "../../public/viber.svg"
-import telegram from "../../public/telegram.svg"
+import viber from "../images/viber.svg"
+import telegram from "../images/telegram.svg"
 
 
 

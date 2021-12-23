@@ -1,9 +1,9 @@
 import React from "react"
 import * as cls from '../css/Footer.module.css'
 
-import viber from "../../public/viber.svg"
-import telegram from "../../public/telegram.svg"
-import phone from "../../public/cell-phone.svg"
+import viber from "../images/viber.svg"
+import telegram from "../images/telegram.svg"
+import phone from "../images/cell-phone.svg"
 
 
 

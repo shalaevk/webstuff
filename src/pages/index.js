@@ -4,7 +4,7 @@ import * as cls from "../css/Index.module.css"
 import { Modal } from "../layout/Modal"
 import { v4 as uuidv4 } from 'uuid';
 
-import swipe from "../../public/hand.gif"
+import swipe from "../images/hand.gif"
 
 // Images
 
