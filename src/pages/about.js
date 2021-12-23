@@ -1,6 +1,6 @@
 import * as React from "react"
 import PrimaryLayout from "../layout/PrimaryLayout"
-import { graphql } from "gatsby"
+
 
 
 
@@ -8,9 +8,9 @@ import { graphql } from "gatsby"
 const NotFoundPage = (props) => {
   console.log("Ab", props)
   const lang = "ru_RU";
-  let menu = lang === "ru_RU" ? props.data.allWpMenu.nodes[1] : props.data.allWpMenu.nodes[0]
+  // let menu = lang === "ru_RU" ? props.data.allWpMenu.nodes[1] : props.data.allWpMenu.nodes[0]
 
-  return (<PrimaryLayout menu={menu}>
+  return (<PrimaryLayout >
     <main>
       About
     </main>
@@ -21,13 +21,3 @@ const NotFoundPage = (props) => {
 export default NotFoundPage
 
 
-
-export const query = graphql`
-  query About {
-     allWpMenu{
-    nodes {
-      locations
-      slug
-    }
- 	 },
-  }`

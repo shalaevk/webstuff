@@ -7,9 +7,9 @@ import { graphql } from "gatsby"
 const NotFoundPage = (props) => {
 
   const lang = "en_US";
-  let menu = lang === "ru_RU" ? props.data.allWpMenu.nodes[1] : props.data.allWpMenu.nodes[0]
+  // let menu = lang === "ru_RU" ? props.data.allWpMenu.nodes[1] : props.data.allWpMenu.nodes[0]
 
-  return (<PrimaryLayout menu={menu} lang={lang}>
+  return (<PrimaryLayout>
     <main>
       About
     </main>
@@ -21,12 +21,3 @@ export default NotFoundPage
 
 
 
-export const query = graphql`
-  query AboutEn {
-     allWpMenu{
-    nodes {
-      locations
-      slug
-    }
- 	 },
-  }`

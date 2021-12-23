@@ -4,24 +4,14 @@ module.exports = {
     title: "webstuff portafolio",
   },
   plugins: [
-    {
-      resolve: "gatsby-source-wordpress",
-      options: {
-        url: "http://localhost/webstuff/graphql",
-      },
-      debug: {
-        graphql: {
-          showQueryVarsOnError: true,
-        },
-      },
-    },
+
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "public/fav.png",
       },
     },
     "gatsby-plugin-sharp",
@@ -30,7 +20,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "public",
       },
       __key: "images",
     },

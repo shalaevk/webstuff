@@ -30,6 +30,8 @@ justify-content: space-between;
     font-size: 20px;
     font-weight: 500;
     margin-right: 20px;
+	 color: #fff;
+	 text-decoration: none;
 }
 .social img{
 	width: 2rem;
@@ -51,4 +53,32 @@ justify-content: space-between;
 	text-decoration: none;
 	margin: 0 0.2rem;
 	text-transform: uppercase;
+}
+
+
+
+
+@media screen and (max-width: 662px){
+	.phone{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 409px){
+	.navbar{
+		align-items: self-start;
+	}
+	.contactswrap{
+		flex-direction: column-reverse;
+	}
+	.selectorClass{
+		margin-right: 0;
+	}
+	.selectorClass ul{
+		padding-left: 0;
+	}
+	.selectorClass a{
+		font-size: 1.2rem;
+	}
 }

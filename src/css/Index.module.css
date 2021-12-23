@@ -2,7 +2,7 @@
 .main{
 	background-image: url("../../public/main-bg.jpg");
 	height: 100vh;
-	min-height: 430px;
+	min-height: 530px;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	display: flex;
@@ -189,4 +189,86 @@ border-radius: 0.625rem;
 .priceBtnwrapper{
 	margin-top: 5rem;
 
+}
+.swipeIcon{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 1100px){
+	.main{
+		background-size: cover;
+	}
+	.workswrapper{
+    grid-template-columns: repeat(2, 1fr);
+	}
+	.priceswrap{
+    grid-template-columns: repeat(2, 1fr);
+	}
+	.priceItem:nth-child(2):before,
+   .priceItem:nth-child(2):after{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 991px){
+	.maintextwrapper{
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px){
+.priceswrap{
+    grid-template-columns: repeat(1, 1fr);
+	 grid-auto-rows: auto;
+	}
+	.priceBtnwrapper{
+		    margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 662px){
+	.maintitle{
+		font-size: 3rem;
+	}
+	.priceItem{
+		padding: 0 5%;
+	}
+	.sectiontitle,
+	.maintitle{
+		font-size: 2.4rem;
+	}
+	.works{
+		padding-bottom: 3.5rem;
+	}
+	.workswrapper{
+	overflow-x: auto;
+    grid-template-columns: repeat(auto);
+	 grid-auto-flow: column;
+	 padding-bottom: 2rem;
+	 margin-top: 2rem;
+	}
+	.worksItem{
+		min-width: 320px;
+	}
+	.swipeIcon{
+		display: block;
+		text-align: right;
+	}
+	.swipeIcon img{
+		max-width: 50px;
+	}
+	.buttonPrice{
+		margin-top: 4rem;
+	}
+
+}
+
+
+@media screen and (max-width: 330px){
+	.maintitle{
+		font-size: 2.1rem;
+	}
 }
