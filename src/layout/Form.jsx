@@ -43,7 +43,7 @@ export default class Form extends React.Component {
 						<h1>Contact</h1>
 						<form
 							netlify
-							name="contact"
+							name="Zakaz"
 							method="post"
 							action="/contact/thanks/"
 							data-netlify="true"
