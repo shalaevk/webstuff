@@ -1,6 +1,6 @@
 
 import React, { } from "react"
-
+import Form from "./Form"
 
 
 export const Modal = ({ lang, text, handleClose, show }) => {
@@ -15,7 +15,7 @@ export const Modal = ({ lang, text, handleClose, show }) => {
 				<button onClick={handleClose} className="closebtn">
 					<img src="jdjdj" alt="close button" />
 				</button>
-				form
+				<Form />
 
 			</section>
 		</div>)
