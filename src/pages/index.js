@@ -3,6 +3,7 @@ import PrimaryLayout from "../layout/PrimaryLayout"
 import * as cls from "../css/Index.module.css"
 import { Modal } from "../layout/Modal"
 import { v4 as uuidv4 } from 'uuid';
+import Form from "../layout/Form"
 
 import swipe from "../images/hand.gif"
 
@@ -412,6 +413,7 @@ const IndexPage = (props) => {
         </div>
       </div>
     </section>
+    <Form />
     <Modal handleClose={hideModal} show={show} />
   </PrimaryLayout>
   )
