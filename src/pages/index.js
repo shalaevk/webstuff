@@ -413,7 +413,6 @@ const IndexPage = (props) => {
         </div>
       </div>
     </section>
-    <Form />
     <Modal handleClose={hideModal} show={show} />
   </PrimaryLayout>
   )
