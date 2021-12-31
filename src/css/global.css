@@ -428,3 +428,38 @@ body{
         font-size: 14px;
     }
 }
+.btn-send{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-send:hover{
+    background: #fff !important;
+    color: #7900ba !important;
+    border: 1px solid #7900ba !important;
+    box-sizing: border-box !important;
+}
+.closebtn{
+    position: absolute;
+    right: 20%;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.closebtn img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+   .content-form{
+       max-width: 100% !important;
+   }
+   .modal-main {
+    width: 95%; 
+    }
+    .closebtn{
+        right: 10%;
+    }
+}

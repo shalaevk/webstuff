@@ -376,9 +376,9 @@ const IndexPage = (props) => {
           </ul>
           <div className={cls.priceBtnwrapper}>
             <span className={cls.price}>
-              {props.pageContext.language === "en_US" ? "" : "от 300 $"}
+              {props.pageContext.language === "en_US" ? "from 3 days" : "от 300 $"}
             </span>
-            <button className={`${cls.button} ${cls.buttonPrice}`}>
+            <button className={`${cls.button} ${cls.buttonPrice}`} onClick={showModal}>
               {props.pageContext.language === "en_US" ? "Order a website" : "Заказать сайт"}
             </button>
           </div>
@@ -390,9 +390,9 @@ const IndexPage = (props) => {
           </ul>
           <div className={cls.priceBtnwrapper}>
             <span className={cls.price}>
-              {props.pageContext.language === "en_US" ? "" : "от 750 $"}
+              {props.pageContext.language === "en_US" ? "from 1 week" : "от 750 $"}
             </span>
-            <button className={`${cls.button} ${cls.buttonPrice}`}>
+            <button className={`${cls.button} ${cls.buttonPrice}`} onClick={showModal}>
               {props.pageContext.language === "en_US" ? "Order a website" : "Заказать сайт"}
             </button>
           </div>
@@ -404,7 +404,7 @@ const IndexPage = (props) => {
           </ul>
           <div className={cls.priceBtnwrapper}>
             <span className={cls.price}>
-              {props.pageContext.language === "en_US" ? "" : "от 1200 $"}
+              {props.pageContext.language === "en_US" ? "from 4 weeks" : "от 1200 $"}
             </span>
             <button className={`${cls.button} ${cls.buttonPrice}`} onClick={showModal}>
               {props.pageContext.language === "en_US" ? "Order a website" : "Заказать сайт"}
@@ -413,7 +413,7 @@ const IndexPage = (props) => {
         </div>
       </div>
     </section>
-    <Modal handleClose={hideModal} show={show} />
+    <Modal handleClose={hideModal} show={show} lang={props.pageContext.language} />
   </PrimaryLayout>
   )
 }
