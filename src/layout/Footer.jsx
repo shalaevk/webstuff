@@ -20,10 +20,10 @@ export const Footer = (props) => {
 					+38 (066) 424-78-64
 					<img src={phone} />
 				</a>
-				<a className={cls.social} href="https://viber">
+				<a className={cls.social} href="viber://chat?number=%2B380508716557">
 					<img src={viber} alt="viber" />
 				</a>
-				<a className={cls.social} href="https://viber">
+				<a className={cls.social} href="https://t.me/Kirill_Shalaev">
 					<img src={telegram} alt="telegram" />
 				</a>
 			</div>
