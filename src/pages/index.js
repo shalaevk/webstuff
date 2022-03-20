@@ -41,12 +41,6 @@ const IndexPage = (props) => {
       ainButtonText: "View works",
       allWorks: [
         {
-          title: "Solarland",
-          url: "https://solarland.com.ua/",
-          description: "Installation of solar power plants",
-          sourceUrl: Solar
-        },
-        {
           title: "Povaga",
           url: "https://zrobylavona.povaha.org.ua/",
           description: "Outstanding Women of Ukraine",
@@ -123,6 +117,12 @@ const IndexPage = (props) => {
           url: "https://rent2ride.co.uk/",
           description: "Car rental",
           sourceUrl: Rent
+        },
+        {
+          title: "Solarland",
+          url: "https://solarland.com.ua/",
+          description: "Installation of solar power plants",
+          sourceUrl: Solar
         },
       ],
       landing: [
