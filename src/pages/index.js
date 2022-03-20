@@ -367,7 +367,7 @@ const IndexPage = (props) => {
     </section>
     <section id="prices" className={`container ${cls.prices}`}>
       <div className={`${cls.sectiontitle} ${cls.pricetitle}`}>
-        {props.pageContext.language === "en_US" ? "Price" : "Стоимость разработки"}
+        {props.pageContext.language === "en_US" ? "Terms" : "Стоимость разработки"}
       </div>
       <div className={cls.priceswrap}>
         <div className={cls.priceItem}>
