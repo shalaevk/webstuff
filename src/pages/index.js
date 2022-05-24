@@ -41,12 +41,6 @@ const IndexPage = (props) => {
       ainButtonText: "View works",
       allWorks: [
         {
-          title: "Povaga",
-          url: "https://zrobylavona.povaha.org.ua/",
-          description: "Outstanding Women of Ukraine",
-          sourceUrl: NDI
-        },
-        {
           title: "Bohoplume",
           url: "https://bohoplume.pl/",
           description: "Fashion accessories for women",
@@ -166,12 +160,6 @@ const IndexPage = (props) => {
           url: "https://solarland.com.ua/",
           description: "Установка солнечных электростаций",
           sourceUrl: Solar
-        },
-        {
-          title: "Повага",
-          url: "https://zrobylavona.povaha.org.ua/",
-          description: "Выдающиеся женщины Украины",
-          sourceUrl: NDI
         },
         {
           title: "Bohoplume",
@@ -376,7 +364,7 @@ const IndexPage = (props) => {
           </ul>
           <div className={cls.priceBtnwrapper}>
             <span className={cls.price}>
-              {props.pageContext.language === "en_US" ? "from 3 days" : "от 300 $"}
+              {props.pageContext.language === "en_US" ? "from 3 days" : "от 3 дней"}
             </span>
             <button className={`${cls.button} ${cls.buttonPrice}`} onClick={showModal}>
               {props.pageContext.language === "en_US" ? "Order a website" : "Заказать сайт"}
@@ -390,7 +378,7 @@ const IndexPage = (props) => {
           </ul>
           <div className={cls.priceBtnwrapper}>
             <span className={cls.price}>
-              {props.pageContext.language === "en_US" ? "from 1 week" : "от 750 $"}
+              {props.pageContext.language === "en_US" ? "from 1 week" : "от 1 недели"}
             </span>
             <button className={`${cls.button} ${cls.buttonPrice}`} onClick={showModal}>
               {props.pageContext.language === "en_US" ? "Order a website" : "Заказать сайт"}
@@ -404,7 +392,7 @@ const IndexPage = (props) => {
           </ul>
           <div className={cls.priceBtnwrapper}>
             <span className={cls.price}>
-              {props.pageContext.language === "en_US" ? "from 4 weeks" : "от 1200 $"}
+              {props.pageContext.language === "en_US" ? "from 4 weeks" : "от 4 недель"}
             </span>
             <button className={`${cls.button} ${cls.buttonPrice}`} onClick={showModal}>
               {props.pageContext.language === "en_US" ? "Order a website" : "Заказать сайт"}
