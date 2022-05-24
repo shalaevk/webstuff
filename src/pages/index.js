@@ -366,9 +366,7 @@ const IndexPage = (props) => {
             <span className={cls.price}>
               {props.pageContext.language === "en_US" ? "from 3 days" : "от 3 дней"}
             </span>
-            <button className={`${cls.button} ${cls.buttonPrice}`} onClick={showModal}>
-              {props.pageContext.language === "en_US" ? "Order a website" : "Заказать сайт"}
-            </button>
+
           </div>
         </div>
 
@@ -380,9 +378,7 @@ const IndexPage = (props) => {
             <span className={cls.price}>
               {props.pageContext.language === "en_US" ? "from 1 week" : "от 1 недели"}
             </span>
-            <button className={`${cls.button} ${cls.buttonPrice}`} onClick={showModal}>
-              {props.pageContext.language === "en_US" ? "Order a website" : "Заказать сайт"}
-            </button>
+
           </div>
         </div>
 
@@ -394,9 +390,7 @@ const IndexPage = (props) => {
             <span className={cls.price}>
               {props.pageContext.language === "en_US" ? "from 4 weeks" : "от 4 недель"}
             </span>
-            <button className={`${cls.button} ${cls.buttonPrice}`} onClick={showModal}>
-              {props.pageContext.language === "en_US" ? "Order a website" : "Заказать сайт"}
-            </button>
+    
           </div>
         </div>
       </div>
