@@ -92,7 +92,7 @@ export default class Form extends React.Component {
 						<h1 style={{ marginBottom: "45px" }}>{this.props.lang === "en_US" ? "Contact" : "Связаться"}</h1>
 						<form
 							style={FormStyle}
-							name="Zakaz"
+							name="Contact-form"
 							method="post"
 							action="https://webstuff.com.ua/"
 							data-netlify="true"
@@ -139,7 +139,7 @@ export default class Form extends React.Component {
 									<input
 										style={Input}
 										placeholder={this.props.lang === "en_US" ? "Email" : "Email"}
-										type={"email"}
+										onChange={this.handleChange}
 										name={"email"}
 										onChange={this.handleChange}
 										id={"email"}
@@ -150,7 +150,7 @@ export default class Form extends React.Component {
 							{this.props.lang === "en_US" ? "" : <div style={Field}>
 								<label style={Label} >
 									<span style={{ marginBottom: "15px", display: "block", }}>Как удобнее связаться?</span>
-									<select style={Select} name="role[]" >
+									<select style={Select}  onChange={this.handleChange} name={"connection"} >
 										<option value="Позвонить">Позвонить</option>
 										<option value="Написать">Написать</option>
 									</select></label>
