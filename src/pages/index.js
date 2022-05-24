@@ -40,6 +40,12 @@ const IndexPage = (props) => {
       mainSubtitle: "Websites and landing pages with a unique design",
       ainButtonText: "View works",
       allWorks: [
+                {
+          title: "Solarland",
+          url: "https://solarland.com.ua/",
+          description: "Installation of solar power plants",
+          sourceUrl: Solar
+        },
         {
           title: "Bohoplume",
           url: "https://bohoplume.pl/",
@@ -111,13 +117,8 @@ const IndexPage = (props) => {
           url: "https://rent2ride.co.uk/",
           description: "Car rental",
           sourceUrl: Rent
-        },
-        {
-          title: "Solarland",
-          url: "https://solarland.com.ua/",
-          description: "Installation of solar power plants",
-          sourceUrl: Solar
-        },
+        }
+
       ],
       landing: [
         { suggestion: "Landing Page" },
