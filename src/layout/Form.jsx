@@ -59,28 +59,7 @@ const Button = {
 
 
 export default class Form extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = { isValidated: false };
-	}
-	handleChange = (e) => {
-		this.setState({ [e.target.name]: e.target.value });
-	};
 
-	handleSubmit = (e) => {
-		e.preventDefault();
-		const form = e.target;
-		fetch("/", {
-			method: "POST",
-			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: encode({
-				"form-name": form.getAttribute("name"),
-				...this.state,
-			}),
-		})
-			.then(() => navigate(form.getAttribute("action")))
-			.catch((error) => alert(error));
-	};
 
 	render() {
 
@@ -92,19 +71,19 @@ export default class Form extends React.Component {
 						<h1 style={{ marginBottom: "45px" }}>{this.props.lang === "en_US" ? "Contact" : "Связаться"}</h1>
 						<form
 							style={FormStyle}
-							name="Contact-form"
+							name="contact-form"
 							method="post"
 							action="https://webstuff.com.ua/"
 							data-netlify="true"
 							data-netlify-honeypot="bot-field"
-							onSubmit={this.handleSubmit}
+							
 						>
 							{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-							<input type="hidden" name="Contact-form" value="contact" />
+							<input type="hidden" name="contact-form" value="contact" />
 							<div hidden>
 								<label>
 									Don’t fill this out:{" "}
-									<input name="bot-field" onChange={this.handleChange} />
+									<input name="bot-field" />
 								</label>
 							</div>
 							<div style={Field}>
@@ -114,7 +93,7 @@ export default class Form extends React.Component {
 										placeholder={this.props.lang === "en_US" ? "Your name" : "Имя"}
 										type={"text"}
 										name={"name"}
-										onChange={this.handleChange}
+										
 										id={"name"}
 										required={true}
 									/>
@@ -128,7 +107,7 @@ export default class Form extends React.Component {
 										placeholder={this.props.lang === "en_US" ? "Phone" : "Телефон"}
 										type={"tel"}
 										name={"tel"}
-										onChange={this.handleChange}
+										
 										id={"tel"}
 										required={true}
 									/>
@@ -139,9 +118,9 @@ export default class Form extends React.Component {
 									<input
 										style={Input}
 										placeholder={this.props.lang === "en_US" ? "Email" : "Email"}
-										onChange={this.handleChange}
+										
 										name={"email"}
-										onChange={this.handleChange}
+										
 										id={"email"}
 										required={true}
 									/>
@@ -150,7 +129,7 @@ export default class Form extends React.Component {
 							{this.props.lang === "en_US" ? "" : <div style={Field}>
 								<label style={Label} >
 									<span style={{ marginBottom: "15px", display: "block", }}>Как удобнее связаться?</span>
-									<select style={Select}  onChange={this.handleChange} name={"connection"} >
+									<select style={Select}  name={"connection"} >
 										<option value="Позвонить">Позвонить</option>
 										<option value="Написать">Написать</option>
 									</select></label>
