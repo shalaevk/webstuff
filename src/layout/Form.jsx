@@ -94,7 +94,7 @@ export default class Form extends React.Component {
 							style={FormStyle}
 							name="Zakaz"
 							method="post"
-							action="/"
+							action="https://webstuff.com.ua/"
 							data-netlify="true"
 							data-netlify-honeypot="bot-field"
 							onSubmit={this.handleSubmit}
